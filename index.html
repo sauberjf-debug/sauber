@@ -13,7 +13,7 @@ gtag('config', 'G-TTEB7R3XQR');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAUber — Compre, Doe e Transforme Vidas</title>
 <meta name="description" content="5% da nossa comissão mensal é doado ao UNICEF Brasil. Produtos de limpeza, higiene e saúde com propósito. Sem custo adicional para você.">
-<meta name="keywords" content="produtos limpeza doação, comprar e doar, unicef brasil, saúde infantil, produtos higiene, SAUber">
+<meta name="keywords" content="produtos limpeza doação, unicef brasil, saúde infantil, produtos higiene, SAUber">
 <meta property="og:title" content="SAUber — Compre e Contribua com o UNICEF Brasil">
 <meta property="og:description" content="5% da nossa comissão mensal vai para o UNICEF Brasil. Sem custo adicional.">
 <meta property="og:type" content="website">
@@ -24,7 +24,7 @@ gtag('config', 'G-TTEB7R3XQR');
   "@type": "Store",
   "name": "SAUber",
   "url": "https://saubershop.com.br",
-  "description": "5% da nossa comissão mensal doado ao UNICEF Brasil. Produtos de limpeza, higiene e saúde.",
+  "description": "5% da nossa comissão mensal doado ao UNICEF Brasil.",
   "slogan": "Compre. Doe. Transforme Vidas.",
   "sameAs": "https://www.unicef.org/brazil"
 }
@@ -56,7 +56,7 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .nav-link-icon{font-size:1.3rem}
 .nav-cats{background:var(--texto);padding:0}
 .nav-cats-inner{max-width:1280px;margin:0 auto;display:flex;overflow-x:auto}
-.nav-cat{color:rgba(255,255,255,0.85);text-decoration:none;padding:9px 20px;font-size:0.8rem;font-weight:700;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px}
+.nav-cat{color:rgba(255,255,255,0.85);text-decoration:none;padding:9px 20px;font-size:0.8rem;font-weight:700;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px;cursor:pointer;background:none;border:none;font-family:'Nunito',sans-serif}
 .nav-cat:hover,.nav-cat.ativo{background:var(--verde);color:white}
 .hero{background:linear-gradient(135deg,#0A3D2E 0%,#1A6B4A 50%,#0A3D2E 100%);padding:50px 24px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,184,0,0.15) 0%,transparent 70%)}
@@ -66,7 +66,7 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .hero h1 span{color:var(--amarelo)}
 .hero-sub{color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:28px;line-height:1.7}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-hero-principal{background:var(--amarelo);color:var(--texto);padding:14px 32px;border-radius:8px;font-weight:800;font-size:0.95rem;text-decoration:none;transition:all 0.2s;display:inline-block}
+.btn-hero-principal{background:var(--amarelo);color:var(--texto);padding:14px 32px;border-radius:8px;font-weight:800;font-size:0.95rem;text-decoration:none;transition:all 0.2s;display:inline-block;cursor:pointer;border:none;font-family:'Nunito',sans-serif}
 .btn-hero-principal:hover{background:#E6A600;transform:translateY(-2px)}
 .btn-hero-sec{background:transparent;color:white;padding:14px 32px;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;border:2px solid rgba(255,255,255,0.4);transition:all 0.2s;display:inline-block}
 .btn-hero-sec:hover{border-color:white;background:rgba(255,255,255,0.1)}
@@ -99,34 +99,36 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .produtos-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
 .produtos-titulo{font-size:1.1rem;font-weight:800;color:var(--texto)}
 .produtos-count{font-size:0.8rem;color:var(--texto2)}
-.produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.produto{background:white;border:1.5px solid var(--borda);border-radius:12px;overflow:hidden;transition:all 0.25s}
-.produto:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-3px)}
-.produto-img{height:180px;overflow:hidden;border-bottom:1px solid var(--borda);position:relative}
-.produto-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s}
-.produto:hover .produto-img img{transform:scale(1.05)}
-.produto-badge{position:absolute;top:8px;left:8px;padding:4px 10px;border-radius:6px;font-size:0.68rem;font-weight:800}
-.badge-frete{background:#E3F9ED;color:#00875A;border:1px solid #B3EDD4}
-.badge-off{background:#FFF3E0;color:#E65100;border:1px solid #FFCC80}
-.badge-hot{background:#FDECEA;color:#C62828;border:1px solid #FFCDD2}
-.produto-doacao-strip{background:var(--verde-claro);padding:5px 12px;font-size:0.68rem;font-weight:800;color:var(--verde2);border-bottom:1px solid #C8EDD8}
-.produto-body{padding:14px}
-.produto-cat{font-size:0.65rem;font-weight:800;color:var(--verde);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
-.produto-nome{font-size:0.88rem;font-weight:700;color:var(--texto);line-height:1.35;margin-bottom:6px;min-height:36px}
-.produto-avaliacao{display:flex;align-items:center;gap:4px;margin-bottom:10px}
-.estrelas{color:#FFB800;font-size:0.72rem}
-.avaliacao-num{font-size:0.68rem;color:var(--texto2)}
-.produto-btns{display:flex;flex-direction:column;gap:7px}
-.btn-ml{display:block;text-align:center;padding:9px;border-radius:7px;font-size:0.78rem;font-weight:800;text-decoration:none;background:#FFE600;color:#333;transition:all 0.2s}
-.btn-ml:hover{background:#FFD000;transform:scale(1.02)}
-.btn-amz{display:block;text-align:center;padding:9px;border-radius:7px;font-size:0.78rem;font-weight:800;text-decoration:none;background:#FF9900;color:#111;transition:all 0.2s}
-.btn-amz:hover{background:#E68800;transform:scale(1.02)}
-.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:16px 24px;display:flex;align-items:center;gap:16px;max-width:1280px;margin:0 auto 28px}
+.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:16px 24px;display:flex;align-items:center;gap:16px;margin-bottom:28px}
 .unicef-banner-icon{font-size:2.2rem;flex-shrink:0}
 .unicef-banner-text{font-size:0.85rem;color:#003A52;line-height:1.5}
 .unicef-banner-text strong{color:var(--unicef2);font-weight:800}
 .unicef-banner-link{margin-left:auto;background:var(--unicef);color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:0.8rem;font-weight:800;white-space:nowrap;flex-shrink:0}
 .unicef-banner-link:hover{background:var(--unicef2)}
+.produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.produto{background:white;border:1.5px solid var(--borda);border-radius:12px;overflow:hidden;transition:all 0.25s}
+.produto:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-3px)}
+.produto-img{height:180px;overflow:hidden;border-bottom:1px solid var(--borda);position:relative;background:var(--cinza);display:flex;align-items:center;justify-content:center}
+.produto-img img{width:100%;height:100%;object-fit:contain;padding:8px;transition:transform 0.3s}
+.produto:hover .produto-img img{transform:scale(1.05)}
+.produto-preco-badge{position:absolute;top:8px;right:8px;background:#E53935;color:white;padding:4px 10px;border-radius:6px;font-size:0.68rem;font-weight:800}
+.produto-doacao-strip{background:var(--verde-claro);padding:5px 12px;font-size:0.68rem;font-weight:800;color:var(--verde2);border-bottom:1px solid #C8EDD8}
+.produto-body{padding:14px}
+.produto-cat{font-size:0.65rem;font-weight:800;color:var(--verde);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.produto-nome{font-size:0.82rem;font-weight:700;color:var(--texto);line-height:1.35;margin-bottom:6px;min-height:40px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.produto-preco{font-size:1rem;font-weight:900;color:#E53935;margin-bottom:4px}
+.produto-preco-original{font-size:0.75rem;color:var(--texto2);text-decoration:line-through;margin-bottom:8px}
+.produto-avaliacao{display:flex;align-items:center;gap:4px;margin-bottom:10px}
+.estrelas{color:#FFB800;font-size:0.72rem}
+.avaliacao-num{font-size:0.68rem;color:var(--texto2)}
+.produto-btns{display:flex;flex-direction:column;gap:7px}
+.btn-ml{display:block;text-align:center;padding:10px;border-radius:7px;font-size:0.82rem;font-weight:800;text-decoration:none;background:#FFE600;color:#333;transition:all 0.2s}
+.btn-ml:hover{background:#FFD000;transform:scale(1.02)}
+.loading{text-align:center;padding:60px 20px;color:var(--texto2)}
+.loading-spinner{width:40px;height:40px;border:4px solid var(--borda);border-top-color:var(--verde);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.erro{text-align:center;padding:40px;color:var(--texto2);font-size:0.9rem}
+.sem-resultados{text-align:center;padding:60px 20px;color:var(--texto2)}
 .impacto{background:var(--verde);padding:60px 24px}
 .impacto-inner{max-width:1280px;margin:0 auto;text-align:center}
 .impacto h2{font-size:2rem;font-weight:900;color:white;margin-bottom:8px}
@@ -158,8 +160,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 .tg-banner{background:linear-gradient(135deg,#0088CC,#005F8E);padding:24px;text-align:center;margin:24px 0;border-radius:16px}
 .tg-banner h3{font-size:1.1rem;font-weight:800;color:white;margin-bottom:6px}
 .tg-banner p{font-size:0.82rem;color:rgba(255,255,255,0.8);margin-bottom:16px}
-.btn-tg{display:inline-block;background:white;color:#0088CC;padding:10px 28px;border-radius:8px;font-weight:800;font-size:0.88rem;text-decoration:none;transition:all 0.2s}
-.btn-tg:hover{transform:translateY(-2px)}
+.btn-tg{display:inline-block;background:white;color:#0088CC;padding:10px 28px;border-radius:8px;font-weight:800;font-size:0.88rem;text-decoration:none}
 @media(max-width:768px){
   .nav-inner{padding:10px 16px;gap:10px}
   .nav-actions{display:none}
@@ -184,8 +185,8 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   <div class="nav-inner">
     <a href="#" class="logo">SAU<span>ber</span></a>
     <div class="search-wrap">
-      <input type="text" id="busca" placeholder="Buscar produtos de limpeza, higiene, saúde..." onkeypress="buscar(event)">
-      <button onclick="buscarClick()">🔍</button>
+      <input type="text" id="busca" placeholder="Buscar produtos de limpeza, higiene, saúde..." onkeypress="buscarEnter(event)">
+      <button onclick="buscarProdutos()">🔍</button>
     </div>
     <div class="nav-actions">
       <a href="https://t.me/techdeals_br" target="_blank" class="nav-link">
@@ -201,14 +202,12 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   </div>
   <div class="nav-cats">
     <div class="nav-cats-inner">
-      <a href="#" class="nav-cat ativo" onclick="filtrar('all',this);return false">🏠 Todos</a>
-      <a href="#" class="nav-cat" onclick="filtrar('limpeza',this);return false">🧹 Limpeza</a>
-      <a href="#" class="nav-cat" onclick="filtrar('higiene',this);return false">🧼 Higiene</a>
-      <a href="#" class="nav-cat" onclick="filtrar('saude',this);return false">💊 Saúde</a>
-      <a href="#" class="nav-cat" onclick="filtrar('embalagem',this);return false">📦 Embalagens</a>
-      <a href="#" class="nav-cat" onclick="filtrar('hospitalar',this);return false">🏥 Hospitalar</a>
-      <a href="#" class="nav-cat" style="color:var(--amarelo)" onclick="filtrar('frete',this);return false">🚚 Frete Grátis</a>
-      <a href="#" class="nav-cat" style="color:#FF6B6B" onclick="filtrar('off',this);return false">🔥 Ofertas</a>
+      <button class="nav-cat ativo" onclick="buscarCategoria('limpeza higiene saude',this)">🏠 Todos</button>
+      <button class="nav-cat" onclick="buscarCategoria('limpeza casa',this)">🧹 Limpeza</button>
+      <button class="nav-cat" onclick="buscarCategoria('higiene pessoal',this)">🧼 Higiene</button>
+      <button class="nav-cat" onclick="buscarCategoria('saude vitaminas',this)">💊 Saúde</button>
+      <button class="nav-cat" onclick="buscarCategoria('embalagens caixas',this)">📦 Embalagens</button>
+      <button class="nav-cat" onclick="buscarCategoria('hospitalar medico',this)">🏥 Hospitalar</button>
     </div>
   </div>
 </nav>
@@ -220,7 +219,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <h1>Compre.<br>Doe.<br><span>Transforme Vidas.</span></h1>
       <p class="hero-sub">Cada produto comprado pelo SAUber contribui com o <strong style="color:var(--amarelo)">UNICEF Brasil</strong> — protegendo crianças em situação de vulnerabilidade. <strong style="color:white">Sem custo adicional para você.</strong></p>
       <div class="hero-btns">
-        <a href="#produtos" class="btn-hero-principal">🛒 Ver Produtos</a>
+        <button class="btn-hero-principal" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">🛒 Ver Produtos</button>
         <a href="#como-funciona" class="btn-hero-sec">Como funciona?</a>
       </div>
       <div class="hero-stats">
@@ -258,26 +257,26 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div class="como-item">
         <div class="como-num">1</div>
         <span class="como-icon">🔍</span>
-        <div class="como-titulo">Escolha um produto</div>
-        <div class="como-desc">Navegue pelo SAUber e encontre o produto que precisa entre limpeza, higiene e saúde.</div>
+        <div class="como-titulo">Busque um produto</div>
+        <div class="como-desc">Pesquise qualquer produto de limpeza, higiene ou saúde diretamente no SAUber.</div>
       </div>
       <div class="como-item">
         <div class="como-num">2</div>
         <span class="como-icon">🛒</span>
-        <div class="como-titulo">Compre no ML ou Amazon</div>
-        <div class="como-desc">Clique no botão e finalize a compra diretamente no Mercado Livre ou Amazon com total segurança.</div>
+        <div class="como-titulo">Compre no Mercado Livre</div>
+        <div class="como-desc">Clique no botão e finalize a compra diretamente no Mercado Livre com total segurança.</div>
       </div>
       <div class="como-item">
         <div class="como-num">3</div>
         <span class="como-icon">💰</span>
         <div class="como-titulo">SAUber recebe comissão</div>
-        <div class="como-desc">Por ser afiliado oficial, recebemos uma pequena comissão da plataforma. Sem custo adicional para você.</div>
+        <div class="como-desc">Por ser afiliado oficial do ML, recebemos uma pequena comissão. Sem custo adicional para você.</div>
       </div>
       <div class="como-item">
         <div class="como-num">4</div>
         <span class="como-icon">💙</span>
         <div class="como-titulo">5% vai para o UNICEF</div>
-        <div class="como-desc">Todo mês, 5% da nossa comissão é doado ao <strong>UNICEF Brasil</strong> via unicef.org.br/doe, com comprovante publicado aqui.</div>
+        <div class="como-desc">Todo mês, 5% da nossa comissão é doado ao <strong>UNICEF Brasil</strong> com comprovante publicado aqui.</div>
       </div>
     </div>
   </div>
@@ -285,14 +284,12 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 
 <div class="filtros-section">
   <div class="filtros-inner">
-    <button class="filtro-btn ativo" onclick="filtrar('all',this)">✅ Todos</button>
-    <button class="filtro-btn" onclick="filtrar('frete',this)">🚚 Frete Grátis</button>
-    <button class="filtro-btn" onclick="filtrar('off',this)">💰 Com Desconto</button>
-    <button class="filtro-btn" onclick="filtrar('limpeza',this)">🧹 Limpeza</button>
-    <button class="filtro-btn" onclick="filtrar('higiene',this)">🧼 Higiene</button>
-    <button class="filtro-btn" onclick="filtrar('saude',this)">💊 Saúde</button>
-    <button class="filtro-btn" onclick="filtrar('embalagem',this)">📦 Embalagens</button>
-    <button class="filtro-btn" onclick="filtrar('hospitalar',this)">🏥 Hospitalar</button>
+    <button class="filtro-btn ativo" onclick="buscarCategoria('limpeza higiene saude',this)">✅ Todos</button>
+    <button class="filtro-btn" onclick="buscarCategoria('limpeza casa',this)">🧹 Limpeza</button>
+    <button class="filtro-btn" onclick="buscarCategoria('higiene pessoal',this)">🧼 Higiene</button>
+    <button class="filtro-btn" onclick="buscarCategoria('saude vitaminas',this)">💊 Saúde</button>
+    <button class="filtro-btn" onclick="buscarCategoria('embalagens caixas',this)">📦 Embalagens</button>
+    <button class="filtro-btn" onclick="buscarCategoria('hospitalar medico',this)">🏥 Hospitalar</button>
   </div>
 </div>
 
@@ -303,188 +300,27 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div class="unicef-banner-icon">💙</div>
       <div class="unicef-banner-text">
         <strong>Nosso parceiro: UNICEF Brasil</strong><br>
-        Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil — organização que protege os direitos de crianças e adolescentes em situação de vulnerabilidade em todo o país.
+        Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil — organização que protege crianças e adolescentes em situação de vulnerabilidade em todo o país.
       </div>
       <a href="https://www.unicef.org/brazil" target="_blank" rel="noopener" class="unicef-banner-link">Saiba Mais ↗</a>
     </div>
 
     <div class="produtos-header">
-      <div class="produtos-titulo">🔥 Produtos em Destaque</div>
-      <div class="produtos-count" id="produtos-count">32 produtos</div>
+      <div class="produtos-titulo" id="produtos-titulo">🔥 Produtos em Destaque</div>
+      <div class="produtos-count" id="produtos-count"></div>
     </div>
 
     <div class="produtos-grid" id="grid">
-
-      <div class="produto" data-cat="limpeza" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&q=80&fit=crop" alt="Detergente Multiuso" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Detergente Multiuso Concentrado 500ml</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(2.341)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/detergente-multiuso_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=detergente+multiuso&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
+      <div class="loading" style="grid-column:1/-1">
+        <div class="loading-spinner"></div>
+        <p>Buscando produtos reais do Mercado Livre...</p>
       </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=400&q=80&fit=crop" alt="Desinfetante" loading="lazy"><span class="produto-badge badge-off">💰 50% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Desinfetante Bactericida 2L Lavanda</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(4.102)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/desinfetante-bactericida_DESCUENTO_50-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=desinfetante+bactericida&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80&fit=crop" alt="Água Sanitária" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Água Sanitária 2L Alvejante Sem Perfume</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(6.789)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/agua-sanitaria-2l_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=agua+sanitaria+2l&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="hot">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=400&q=80&fit=crop" alt="Esponja" loading="lazy"><span class="produto-badge badge-hot">🔥 Mais Vendido</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Esponja de Limpeza Kit 12 unidades</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(5.012)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/esponja-limpeza-kit_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=esponja+limpeza+kit&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&q=80&fit=crop" alt="Vassoura" loading="lazy"><span class="produto-badge badge-off">💰 40% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Vassoura Profissional com Cabo Telescópico</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(3.421)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/vassoura-profissional_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=vassoura+profissional&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=400&q=80&fit=crop" alt="Pano de chão" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Pano de Chão Multiuso Microfibra 3un</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(1.876)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/pano-chao-microfibra_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=pano+chao+microfibra&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80&fit=crop" alt="Limpador multiação" loading="lazy"><span class="produto-badge badge-off">💰 35% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Limpador Multiação Banheiro 500ml</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(2.890)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/limpador-banheiro_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=limpador+banheiro&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="limpeza" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1613236795009-b289db2b2e46?w=400&q=80&fit=crop" alt="Lustra móveis" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Limpeza</div><div class="produto-nome">Lustra Móveis Lavanda 200ml</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(987)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/lustra-moveis_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=lustra+moveis&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80&fit=crop" alt="Sabonete" loading="lazy"><span class="produto-badge badge-off">💰 30% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene Pessoal</div><div class="produto-nome">Sabonete Antibacteriano Premium 90g</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(891)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/sabonete-antibacteriano_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=sabonete+antibacteriano&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="hot frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1631390009673-9c4c8a8c4e68?w=400&q=80&fit=crop" alt="Shampoo" loading="lazy"><span class="produto-badge badge-hot">🔥 Popular</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene Pessoal</div><div class="produto-nome">Shampoo Anti-Resíduo 300ml Cabelos Oleosos</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(2.109)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/shampoo-anti-residuo_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=shampoo+anti+residuo&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=400&q=80&fit=crop" alt="Escova elétrica" loading="lazy"><span class="produto-badge badge-off">💰 25% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene Pessoal</div><div class="produto-nome">Escova de Dente Elétrica Recarregável</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(4.567)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/escova-dente-eletrica_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=escova+dente+eletrica&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400&q=80&fit=crop" alt="Papel higiênico" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene</div><div class="produto-nome">Papel Higiênico Folha Dupla 64 rolos</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(12.341)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/papel-higienico-folha-dupla_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=papel+higienico+folha+dupla&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80&fit=crop" alt="Fio dental" loading="lazy"><span class="produto-badge badge-off">💰 20% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene Pessoal</div><div class="produto-nome">Fio Dental Menta Suave 50m Kit 3un</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(1.543)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/fio-dental-menta_DESCUENTO_20-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=fio+dental+menta&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="higiene" data-tag="frete hot">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=400&q=80&fit=crop" alt="Desodorante" loading="lazy"><span class="produto-badge badge-hot">🔥 Mais Vendido</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Higiene Pessoal</div><div class="produto-nome">Desodorante Roll-On Antitranspirante 50ml</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(8.765)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/desodorante-roll-on_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=desodorante+roll+on&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="saude" data-tag="hot frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400&q=80&fit=crop" alt="Vitamina C" loading="lazy"><span class="produto-badge badge-hot">🔥 Mais Vendido</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Saúde</div><div class="produto-nome">Vitamina C 1000mg Efervescente 10un</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(7.854)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/vitamina-c-1000mg_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=vitamina+c+1000mg&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="saude" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80&fit=crop" alt="Termômetro" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Saúde</div><div class="produto-nome">Termômetro Digital Infravermelho</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(8.234)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/termometro-digital-infravermelho_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=termometro+digital+infravermelho&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="saude" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&q=80&fit=crop" alt="Óleo de coco" loading="lazy"><span class="produto-badge badge-off">💰 35% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Saúde</div><div class="produto-nome">Óleo de Coco Extra Virgem 500ml Orgânico</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(3.890)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/oleo-coco-extra-virgem_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=oleo+de+coco+extra+virgem&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="saude" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1559181567-c3190bfa4614?w=400&q=80&fit=crop" alt="Colágeno" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Saúde</div><div class="produto-nome">Colágeno Hidrolisado com Vitamina C 300g</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(5.432)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/colageno-hidrolisado_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=colageno+hidrolisado&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="saude" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=400&q=80&fit=crop" alt="Vitamina D" loading="lazy"><span class="produto-badge badge-off">💰 28% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Saúde</div><div class="produto-nome">Vitamina D3 2000UI 60 Cápsulas</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(6.123)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/vitamina-d3-2000ui_DESCUENTO_20-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=vitamina+d3+2000ui&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="hospitalar" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=400&q=80&fit=crop" alt="Álcool gel" loading="lazy"><span class="produto-badge badge-off">💰 30% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Hospitalar</div><div class="produto-nome">Álcool Gel 70% Antisséptico 500ml</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(3.567)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/alcool-gel-70_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=alcool+gel+70&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="hospitalar" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80&fit=crop" alt="Luvas nitrilo" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Hospitalar</div><div class="produto-nome">Luvas Descartáveis Nitrilo 100un Tam M</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(9.123)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/luvas-descartaveis-nitrilo_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=luvas+descartaveis+nitrilo&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="hospitalar" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?w=400&q=80&fit=crop" alt="Máscara cirúrgica" loading="lazy"><span class="produto-badge badge-off">💰 40% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Hospitalar</div><div class="produto-nome">Máscara Descartável Tripla Camada 50un</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(7.890)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/mascara-descartavel-tripla_DESCUENTO_30-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=mascara+descartavel+tripla&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="hospitalar" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400&q=80&fit=crop" alt="Termômetro clínico" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Hospitalar</div><div class="produto-nome">Termômetro Clínico Digital Axilar</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(4.321)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/termometro-clinico-digital_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=termometro+clinico+digital&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="embalagem" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&q=80&fit=crop" alt="Caixas papelão" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Embalagens</div><div class="produto-nome">Kit Caixas Papelão 20 unidades Mistas</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(1.230)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/caixas-papelao-kit_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=kit+caixas+papelao&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="embalagem" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=400&q=80&fit=crop" alt="Sacolas kraft" loading="lazy"><span class="produto-badge badge-off">💰 20% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Embalagens</div><div class="produto-nome">Sacolas Biodegradáveis 100un Kraft</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(2.456)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/sacolas-biodegradaveis_DESCUENTO_20-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=sacolas+biodegradaveis&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="embalagem" data-tag="frete">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80&fit=crop" alt="Fita adesiva" loading="lazy"><span class="produto-badge badge-frete">🚚 Frete Grátis</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Embalagens</div><div class="produto-nome">Fita Adesiva para Embalagem 48mm Kit 6un</div><div class="produto-avaliacao"><span class="estrelas">★★★★★</span><span class="avaliacao-num">(3.201)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/fita-adesiva-embalagem_Frete_GRATIS_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=fita+adesiva+embalagem&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
-      <div class="produto" data-cat="embalagem" data-tag="off">
-        <div class="produto-img"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=80&fit=crop" alt="Plástico bolha" loading="lazy"><span class="produto-badge badge-off">💰 25% OFF</span></div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body"><div class="produto-cat">Embalagens</div><div class="produto-nome">Plástico Bolha para Proteção 1m x 10m</div><div class="produto-avaliacao"><span class="estrelas">★★★★☆</span><span class="avaliacao-num">(1.876)</span></div><div class="produto-btns"><a href="https://lista.mercadolivre.com.br/plastico-bolha-protecao_DESCUENTO_20-100_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="btn-ml">🛒 Mercado Livre</a><a href="https://www.amazon.com.br/s?k=plastico+bolha+protecao&tag=af20251213135858" target="_blank" class="btn-amz">📦 Amazon</a></div></div>
-      </div>
-
     </div>
 
-    <div class="tg-banner">
-      <div style="max-width:600px;margin:0 auto">
-        <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
-        <p>Promoções exclusivas de limpeza, higiene e saúde direto no seu celular — gratuito.</p>
-        <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
-      </div>
+    <div class="tg-banner" style="margin-top:32px">
+      <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
+      <p>Promoções exclusivas de limpeza, higiene e saúde direto no seu celular — gratuito.</p>
+      <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
     </div>
 
   </div>
@@ -519,7 +355,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 </section>
 
 <div class="aviso-afiliado">
-  <strong>ℹ️ Aviso de Afiliado:</strong> SAUber é um site de curadoria com links de afiliados do Mercado Livre e Amazon Brasil. Ao comprar através dos nossos links, recebemos uma comissão <strong>sem custo adicional para você</strong>. 5% dessa comissão é doado mensalmente ao <strong>UNICEF Brasil</strong>. Todas as compras são realizadas diretamente nas plataformas oficiais.
+  <strong>ℹ️ Aviso de Afiliado:</strong> SAUber é um site de curadoria com links de afiliados do Mercado Livre. Ao comprar através dos nossos links, recebemos uma comissão <strong>sem custo adicional para você</strong>. 5% dessa comissão é doado mensalmente ao <strong>UNICEF Brasil</strong>. Todas as compras são realizadas diretamente no Mercado Livre.
 </div>
 
 <footer>
@@ -535,11 +371,11 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div>
         <div class="footer-titulo">Categorias</div>
         <ul class="footer-links">
-          <li><a href="#">🧹 Limpeza</a></li>
-          <li><a href="#">🧼 Higiene Pessoal</a></li>
-          <li><a href="#">💊 Saúde</a></li>
-          <li><a href="#">📦 Embalagens</a></li>
-          <li><a href="#">🏥 Hospitalar</a></li>
+          <li><a href="#" onclick="buscarCategoria('limpeza casa',null)">🧹 Limpeza</a></li>
+          <li><a href="#" onclick="buscarCategoria('higiene pessoal',null)">🧼 Higiene Pessoal</a></li>
+          <li><a href="#" onclick="buscarCategoria('saude vitaminas',null)">💊 Saúde</a></li>
+          <li><a href="#" onclick="buscarCategoria('embalagens caixas',null)">📦 Embalagens</a></li>
+          <li><a href="#" onclick="buscarCategoria('hospitalar medico',null)">🏥 Hospitalar</a></li>
         </ul>
       </div>
       <div>
@@ -563,41 +399,130 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
     </div>
     <div class="footer-bottom">
       <span>© 2026 SAUber — Todos os direitos reservados.</span>
-      <span>Afiliado: Mercado Livre & Amazon Brasil — <a href="https://www.unicef.org/brazil" target="_blank" rel="noopener" style="color:var(--verde);text-decoration:none">Parceiro UNICEF Brasil</a></span>
+      <span>Afiliado Mercado Livre — <a href="https://www.unicef.org/brazil" target="_blank" rel="noopener" style="color:var(--verde);text-decoration:none">Parceiro UNICEF Brasil</a></span>
     </div>
   </div>
 </footer>
 
 <script>
-function filtrar(cat, btn) {
-  const cards = document.querySelectorAll('.produto');
-  let visiveis = 0;
-  cards.forEach(card => {
-    const cardCat = card.dataset.cat || '';
-    const cardTag = card.dataset.tag || '';
-    const mostrar = cat === 'all' || cardCat === cat || cardTag.includes(cat);
-    card.style.display = mostrar ? 'block' : 'none';
-    if (mostrar) visiveis++;
-  });
-  document.getElementById('produtos-count').textContent = visiveis + ' produtos';
+const TAG = 'af20251213135858';
+const QUERIES_PADRAO = ['detergente limpeza','sabonete higiene','alcool gel','papel higienico','shampoo cabelo','vitamina c','luvas descartaveis','desinfetante','esponja limpeza','mascara descartavel','termometro digital','agua sanitaria','escova dente','desodorante','oleo coco'];
+
+function formatarPreco(preco) {
+  return 'R$ ' + preco.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+function gerarEstrelas(avaliacao) {
+  const nota = Math.round(avaliacao || 4);
+  return '★'.repeat(nota) + '☆'.repeat(5 - nota);
+}
+
+function renderProdutos(items, titulo) {
+  const grid = document.getElementById('grid');
+  const count = document.getElementById('produtos-count');
+  const tituloEl = document.getElementById('produtos-titulo');
+
+  if (titulo) tituloEl.textContent = titulo;
+  count.textContent = items.length + ' produtos encontrados';
+
+  if (!items.length) {
+    grid.innerHTML = '<div class="sem-resultados" style="grid-column:1/-1"><p>Nenhum produto encontrado. Tente outra busca.</p></div>';
+    return;
+  }
+
+  grid.innerHTML = items.map(item => {
+    const preco = item.price ? formatarPreco(item.price) : '';
+    const precoOriginal = item.original_price && item.original_price > item.price ? formatarPreco(item.original_price) : '';
+    const desconto = item.original_price && item.original_price > item.price ? Math.round((1 - item.price/item.original_price)*100) : 0;
+    const img = item.thumbnail ? item.thumbnail.replace('http://','https://').replace('-I.jpg','-O.jpg') : '';
+    const link = item.permalink + (item.permalink.includes('?') ? '&' : '?') + 'matt_tool=' + TAG;
+    const nome = item.title || '';
+    const vendas = item.sold_quantity ? '(' + item.sold_quantity.toLocaleString('pt-BR') + ' vendidos)' : '';
+    const avaliacao = item.reviews ? item.reviews.rating_average : 4.5;
+
+    return `
+      <div class="produto">
+        <div class="produto-img">
+          ${img ? `<img src="${img}" alt="${nome}" loading="lazy" onerror="this.style.display='none'">` : ''}
+          ${desconto > 0 ? `<span class="produto-preco-badge">${desconto}% OFF</span>` : ''}
+        </div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">${nome}</div>
+          ${preco ? `<div class="produto-preco">${preco}</div>` : ''}
+          ${precoOriginal ? `<div class="produto-preco-original">${precoOriginal}</div>` : ''}
+          <div class="produto-avaliacao">
+            <span class="estrelas">${gerarEstrelas(avaliacao)}</span>
+            <span class="avaliacao-num">${vendas}</span>
+          </div>
+          <div class="produto-btns">
+            <a href="${link}" target="_blank" class="btn-ml">🛒 Comprar no Mercado Livre</a>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function mostrarLoading() {
+  document.getElementById('grid').innerHTML = `
+    <div class="loading" style="grid-column:1/-1">
+      <div class="loading-spinner"></div>
+      <p>Buscando produtos reais do Mercado Livre...</p>
+    </div>`;
+}
+
+async function buscarML(query, limite) {
+  limite = limite || 32;
+  const url = `https://api.mercadolibre.com/sites/MLB/search?q=${encodeURIComponent(query)}&limit=${limite}&condition=new`;
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error('Erro na API');
+  const data = await resp.json();
+  return data.results || [];
+}
+
+async function buscarProdutos() {
+  const q = document.getElementById('busca').value.trim();
+  if (!q) return;
+  mostrarLoading();
+  document.getElementById('produtos').scrollIntoView({behavior:'smooth'});
+  try {
+    const items = await buscarML(q, 32);
+    renderProdutos(items, '🔍 Resultados para "' + q + '"');
+    document.querySelectorAll('.filtro-btn, .nav-cat').forEach(b => b.classList.remove('ativo'));
+  } catch(e) {
+    document.getElementById('grid').innerHTML = '<div class="erro" style="grid-column:1/-1">Erro ao buscar produtos. Tente novamente.</div>';
+  }
+}
+
+async function buscarCategoria(query, btn) {
+  mostrarLoading();
   if (btn) {
     document.querySelectorAll('.filtro-btn, .nav-cat').forEach(b => b.classList.remove('ativo'));
     btn.classList.add('ativo');
   }
+  try {
+    const items = await buscarML(query, 32);
+    renderProdutos(items, '🔥 Produtos em Destaque');
+  } catch(e) {
+    document.getElementById('grid').innerHTML = '<div class="erro" style="grid-column:1/-1">Erro ao buscar produtos. Tente novamente.</div>';
+  }
 }
-function buscar(e) { if (e.key === 'Enter') buscarClick(); }
-function buscarClick() {
-  const q = document.getElementById('busca').value.trim();
-  if (q) window.open('https://lista.mercadolivre.com.br/' + encodeURIComponent(q) + '#matt_tool=af20251213135858', '_blank');
+
+function buscarEnter(e) {
+  if (e.key === 'Enter') buscarProdutos();
 }
+
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href');
     if (id === '#') return;
     e.preventDefault();
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
   });
 });
+
+// Carrega produtos iniciais
+buscarCategoria('limpeza higiene saude', null);
 </script>
 </body>
 </html>
