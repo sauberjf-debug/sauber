@@ -38,8 +38,11 @@ gtag('config', 'G-TTEB7R3XQR');
   --cinza:#F8F9FA;--borda:#DEE2E6;
   --sombra:0 2px 12px rgba(0,0,0,0.08);--sombra2:0 8px 32px rgba(0,0,0,0.12);
   --unicef:#00AEEF;--unicef2:#0086B8;
+  --ml:#FFE600;--ml2:#F0D800;
 }
 body{font-family:'Nunito',sans-serif;background:var(--cinza);color:var(--texto);font-size:15px;line-height:1.6}
+
+/* NAV */
 .nav-doacao{background:var(--verde);color:white;text-align:center;padding:8px 20px;font-size:0.82rem;font-weight:700}
 .nav-doacao span{background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:100px;margin:0 6px}
 nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-index:200}
@@ -56,9 +59,11 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .nav-link-icon{font-size:1.3rem}
 .nav-cats{background:var(--texto);padding:0}
 .nav-cats-inner{max-width:1280px;margin:0 auto;display:flex;overflow-x:auto}
-.nav-cat{color:rgba(255,255,255,0.85);text-decoration:none;padding:9px 20px;font-size:0.8rem;font-weight:700;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px;cursor:pointer;background:none;border:none;font-family:'Nunito',sans-serif}
-.nav-cat:hover,.nav-cat.ativo{background:var(--verde);color:white}
-.hero{background:linear-gradient(135deg,#0A3D2E 0%,#1A6B4A 50%,#0A3D2E 100%);padding:50px 24px;position:relative;overflow:hidden}
+.nav-cat{color:rgba(255,255,255,0.85);text-decoration:none;padding:9px 20px;font-size:0.8rem;font-weight:700;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px}
+.nav-cat:hover{background:var(--verde);color:white}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0A3D2E 0%,#1A6B4A 50%,#0A3D2E 100%);padding:60px 24px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,184,0,0.15) 0%,transparent 70%)}
 .hero-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,184,0,0.15);border:1px solid rgba(255,184,0,0.4);color:var(--amarelo);padding:6px 16px;border-radius:100px;font-size:0.75rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
@@ -66,20 +71,24 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .hero h1 span{color:var(--amarelo)}
 .hero-sub{color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:28px;line-height:1.7}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-hero-principal{background:var(--amarelo);color:var(--texto);padding:14px 32px;border-radius:8px;font-weight:800;font-size:0.95rem;text-decoration:none;transition:all 0.2s;display:inline-block;cursor:pointer;border:none;font-family:'Nunito',sans-serif}
-.btn-hero-principal:hover{background:#E6A600;transform:translateY(-2px)}
-.btn-hero-sec{background:transparent;color:white;padding:14px 32px;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;border:2px solid rgba(255,255,255,0.4);transition:all 0.2s;display:inline-block}
+.btn-hero-ml{background:var(--ml);color:#333;padding:16px 36px;border-radius:8px;font-weight:900;font-size:1rem;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:10px}
+.btn-hero-ml:hover{background:var(--ml2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,230,0,0.4)}
+.btn-hero-sec{background:transparent;color:white;padding:16px 32px;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;border:2px solid rgba(255,255,255,0.4);transition:all 0.2s;display:inline-block}
 .btn-hero-sec:hover{border-color:white;background:rgba(255,255,255,0.1)}
 .hero-stats{display:flex;gap:32px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.1)}
 .hero-stat-num{font-size:1.8rem;font-weight:900;color:var(--amarelo)}
 .hero-stat-label{font-size:0.72rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-.hero-doacao-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:32px;text-align:center}
-.doacao-emoji{font-size:4rem;display:block;margin-bottom:16px}
-.doacao-card-titulo{font-size:1.1rem;font-weight:800;color:white;margin-bottom:8px}
-.doacao-card-sub{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:20px}
-.doacao-pct{font-size:4rem;font-weight:900;color:var(--amarelo);line-height:1}
-.doacao-pct-label{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px;margin-bottom:16px}
-.doacao-ong{font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:12px;line-height:1.6}
+
+/* HERO CARD */
+.hero-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:32px;text-align:center}
+.hero-card-emoji{font-size:3.5rem;display:block;margin-bottom:16px}
+.hero-card-titulo{font-size:1.1rem;font-weight:800;color:white;margin-bottom:8px}
+.hero-card-sub{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:24px}
+.hero-card-pct{font-size:4rem;font-weight:900;color:var(--amarelo);line-height:1}
+.hero-card-pct-label{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px;margin-bottom:20px}
+.hero-card-ong{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:12px;line-height:1.6}
+
+/* COMO FUNCIONA */
 .como{background:white;padding:60px 24px}
 .como-inner{max-width:1280px;margin:0 auto}
 .sec-titulo{font-size:1.6rem;font-weight:900;color:var(--texto);margin-bottom:8px}
@@ -90,45 +99,43 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .como-icon{font-size:2.5rem;margin-bottom:12px;display:block}
 .como-titulo{font-size:0.95rem;font-weight:800;color:var(--texto);margin-bottom:6px}
 .como-desc{font-size:0.82rem;color:var(--texto2);line-height:1.6}
-.filtros-section{background:white;border-bottom:1px solid var(--borda);padding:12px 24px;position:sticky;top:57px;z-index:100}
-.filtros-inner{max-width:1280px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;align-items:center}
-.filtro-btn{background:var(--cinza);border:1.5px solid var(--borda);border-radius:100px;padding:7px 18px;font-size:0.8rem;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'Nunito',sans-serif;color:var(--texto);white-space:nowrap}
-.filtro-btn:hover,.filtro-btn.ativo{background:var(--verde);border-color:var(--verde);color:white}
-.produtos-section{padding:32px 24px}
-.produtos-inner{max-width:1280px;margin:0 auto}
-.produtos-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
-.produtos-titulo{font-size:1.1rem;font-weight:800;color:var(--texto)}
-.produtos-count{font-size:0.8rem;color:var(--texto2)}
-.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:16px 24px;display:flex;align-items:center;gap:16px;margin-bottom:28px}
+
+/* CATEGORIAS */
+.cats-section{padding:48px 24px;background:var(--cinza)}
+.cats-inner{max-width:1280px;margin:0 auto}
+.cats-titulo{font-size:1.3rem;font-weight:900;color:var(--texto);margin-bottom:8px}
+.cats-sub{font-size:0.9rem;color:var(--texto2);margin-bottom:32px}
+.cats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.cat-card{background:white;border:1.5px solid var(--borda);border-radius:16px;padding:28px 20px;text-align:center;text-decoration:none;transition:all 0.25s;display:block}
+.cat-card:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-4px)}
+.cat-emoji{font-size:3rem;display:block;margin-bottom:12px}
+.cat-nome{font-size:1rem;font-weight:800;color:var(--texto);margin-bottom:6px}
+.cat-desc{font-size:0.78rem;color:var(--texto2);margin-bottom:16px;line-height:1.5}
+.cat-btn{background:var(--ml);color:#333;padding:8px 20px;border-radius:8px;font-size:0.82rem;font-weight:800;display:inline-block;transition:all 0.2s}
+.cat-card:hover .cat-btn{background:var(--ml2)}
+
+/* UNICEF BANNER */
+.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:20px 28px;display:flex;align-items:center;gap:16px;max-width:1280px;margin:0 auto 0}
 .unicef-banner-icon{font-size:2.2rem;flex-shrink:0}
 .unicef-banner-text{font-size:0.85rem;color:#003A52;line-height:1.5}
 .unicef-banner-text strong{color:var(--unicef2);font-weight:800}
 .unicef-banner-link{margin-left:auto;background:var(--unicef);color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:0.8rem;font-weight:800;white-space:nowrap;flex-shrink:0}
 .unicef-banner-link:hover{background:var(--unicef2)}
-.produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.produto{background:white;border:1.5px solid var(--borda);border-radius:12px;overflow:hidden;transition:all 0.25s}
-.produto:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-3px)}
-.produto-img{height:180px;overflow:hidden;border-bottom:1px solid var(--borda);position:relative;background:var(--cinza);display:flex;align-items:center;justify-content:center}
-.produto-img img{width:100%;height:100%;object-fit:contain;padding:8px;transition:transform 0.3s}
-.produto:hover .produto-img img{transform:scale(1.05)}
-.produto-preco-badge{position:absolute;top:8px;right:8px;background:#E53935;color:white;padding:4px 10px;border-radius:6px;font-size:0.68rem;font-weight:800}
-.produto-doacao-strip{background:var(--verde-claro);padding:5px 12px;font-size:0.68rem;font-weight:800;color:var(--verde2);border-bottom:1px solid #C8EDD8}
-.produto-body{padding:14px}
-.produto-cat{font-size:0.65rem;font-weight:800;color:var(--verde);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
-.produto-nome{font-size:0.82rem;font-weight:700;color:var(--texto);line-height:1.35;margin-bottom:6px;min-height:40px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.produto-preco{font-size:1rem;font-weight:900;color:#E53935;margin-bottom:4px}
-.produto-preco-original{font-size:0.75rem;color:var(--texto2);text-decoration:line-through;margin-bottom:8px}
-.produto-avaliacao{display:flex;align-items:center;gap:4px;margin-bottom:10px}
-.estrelas{color:#FFB800;font-size:0.72rem}
-.avaliacao-num{font-size:0.68rem;color:var(--texto2)}
-.produto-btns{display:flex;flex-direction:column;gap:7px}
-.btn-ml{display:block;text-align:center;padding:10px;border-radius:7px;font-size:0.82rem;font-weight:800;text-decoration:none;background:#FFE600;color:#333;transition:all 0.2s}
-.btn-ml:hover{background:#FFD000;transform:scale(1.02)}
-.loading{text-align:center;padding:60px 20px;color:var(--texto2)}
-.loading-spinner{width:40px;height:40px;border:4px solid var(--borda);border-top-color:var(--verde);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.erro{text-align:center;padding:40px;color:var(--texto2);font-size:0.9rem}
-.sem-resultados{text-align:center;padding:60px 20px;color:var(--texto2)}
+
+/* BUSCA DESTAQUE */
+.busca-section{background:white;padding:48px 24px}
+.busca-inner{max-width:800px;margin:0 auto;text-align:center}
+.busca-titulo{font-size:1.4rem;font-weight:900;color:var(--texto);margin-bottom:8px}
+.busca-sub{font-size:0.9rem;color:var(--texto2);margin-bottom:28px}
+.busca-wrap{display:flex;border-radius:12px;overflow:hidden;border:2px solid var(--verde);background:white;box-shadow:var(--sombra)}
+.busca-wrap input{flex:1;padding:14px 20px;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:1rem}
+.busca-wrap button{background:var(--verde);color:white;border:none;padding:14px 28px;cursor:pointer;font-size:0.95rem;font-weight:800;font-family:'Nunito',sans-serif;transition:background 0.2s}
+.busca-wrap button:hover{background:var(--verde2)}
+.busca-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.busca-tag{background:var(--cinza);border:1px solid var(--borda);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:700;cursor:pointer;color:var(--texto);transition:all 0.2s;text-decoration:none}
+.busca-tag:hover{background:var(--verde);border-color:var(--verde);color:white}
+
+/* IMPACTO */
 .impacto{background:var(--verde);padding:60px 24px}
 .impacto-inner{max-width:1280px;margin:0 auto;text-align:center}
 .impacto h2{font-size:2rem;font-weight:900;color:white;margin-bottom:8px}
@@ -141,8 +148,12 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .impacto-ong-icon{font-size:2rem}
 .impacto-ong-nome{font-size:0.9rem;font-weight:800;color:white}
 .impacto-ong-desc{font-size:0.78rem;color:rgba(255,255,255,0.7);text-align:left}
+
+/* AVISO */
 .aviso-afiliado{background:white;border-top:1px solid var(--borda);padding:16px 24px;text-align:center;font-size:0.75rem;color:var(--texto2)}
 .aviso-afiliado strong{color:var(--verde)}
+
+/* FOOTER */
 footer{background:var(--texto);color:white;padding:48px 24px 24px}
 .footer-inner{max-width:1280px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:32px}
@@ -157,21 +168,23 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 .us-link{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 20px;text-align:center;margin:24px 0}
 .us-link a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.8rem}
 .us-link a:hover{color:var(--verde)}
-.tg-banner{background:linear-gradient(135deg,#0088CC,#005F8E);padding:24px;text-align:center;margin:24px 0;border-radius:16px}
+.tg-banner{background:linear-gradient(135deg,#0088CC,#005F8E);padding:24px;text-align:center;margin:48px 0 0;border-radius:0}
 .tg-banner h3{font-size:1.1rem;font-weight:800;color:white;margin-bottom:6px}
 .tg-banner p{font-size:0.82rem;color:rgba(255,255,255,0.8);margin-bottom:16px}
 .btn-tg{display:inline-block;background:white;color:#0088CC;padding:10px 28px;border-radius:8px;font-weight:800;font-size:0.88rem;text-decoration:none}
+
 @media(max-width:768px){
   .nav-inner{padding:10px 16px;gap:10px}
   .nav-actions{display:none}
   .hero-inner{grid-template-columns:1fr;gap:32px}
-  .hero-doacao-card{display:none}
+  .hero-card{display:none}
   .como-grid{grid-template-columns:1fr 1fr}
   .impacto-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
-  .produtos-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  .cats-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
   .unicef-banner{flex-wrap:wrap}
   .unicef-banner-link{margin-left:0;width:100%;text-align:center}
+  .hero-btns{flex-direction:column}
 }
 </style>
 </head>
@@ -186,7 +199,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
     <a href="#" class="logo">SAU<span>ber</span></a>
     <div class="search-wrap">
       <input type="text" id="busca" placeholder="Buscar produtos de limpeza, higiene, saúde..." onkeypress="buscarEnter(event)">
-      <button onclick="buscarProdutos()">🔍</button>
+      <button onclick="buscarML()">🔍</button>
     </div>
     <div class="nav-actions">
       <a href="https://t.me/techdeals_br" target="_blank" class="nav-link">
@@ -202,16 +215,17 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   </div>
   <div class="nav-cats">
     <div class="nav-cats-inner">
-      <button class="nav-cat ativo" onclick="buscarCategoria('limpeza higiene saude',this)">🏠 Todos</button>
-      <button class="nav-cat" onclick="buscarCategoria('limpeza casa',this)">🧹 Limpeza</button>
-      <button class="nav-cat" onclick="buscarCategoria('higiene pessoal',this)">🧼 Higiene</button>
-      <button class="nav-cat" onclick="buscarCategoria('saude vitaminas',this)">💊 Saúde</button>
-      <button class="nav-cat" onclick="buscarCategoria('embalagens caixas',this)">📦 Embalagens</button>
-      <button class="nav-cat" onclick="buscarCategoria('hospitalar medico',this)">🏥 Hospitalar</button>
+      <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="nav-cat">🏠 Todos os Produtos</a>
+      <a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🧹 Limpeza</a>
+      <a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🧼 Higiene</a>
+      <a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">💊 Saúde</a>
+      <a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">📦 Embalagens</a>
+      <a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🏥 Hospitalar</a>
     </div>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <div>
@@ -219,7 +233,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <h1>Compre.<br>Doe.<br><span>Transforme Vidas.</span></h1>
       <p class="hero-sub">Cada produto comprado pelo SAUber contribui com o <strong style="color:var(--amarelo)">UNICEF Brasil</strong> — protegendo crianças em situação de vulnerabilidade. <strong style="color:white">Sem custo adicional para você.</strong></p>
       <div class="hero-btns">
-        <button class="btn-hero-principal" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">🛒 Ver Produtos</button>
+        <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="btn-hero-ml">🛒 Ver Produtos no Mercado Livre</a>
         <a href="#como-funciona" class="btn-hero-sec">Como funciona?</a>
       </div>
       <div class="hero-stats">
@@ -237,18 +251,19 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
         </div>
       </div>
     </div>
-    <div class="hero-doacao-card">
-      <span class="doacao-emoji">💙</span>
-      <div class="doacao-card-titulo">Programa de Doação SAUber</div>
-      <div class="doacao-card-sub">A cada mês, o SAUber destina</div>
-      <div class="doacao-pct">5%</div>
-      <div class="doacao-pct-label">da comissão de afiliado</div>
+    <div class="hero-card">
+      <span class="hero-card-emoji">💙</span>
+      <div class="hero-card-titulo">Programa de Doação SAUber</div>
+      <div class="hero-card-sub">A cada mês, o SAUber destina</div>
+      <div class="hero-card-pct">5%</div>
+      <div class="hero-card-pct-label">da comissão de afiliado</div>
       <div style="font-size:0.78rem;color:rgba(255,255,255,0.7)">ao <strong style="color:var(--amarelo)">UNICEF Brasil</strong> — protegendo crianças</div>
-      <div class="doacao-ong">Relatório mensal de doações publicado nesta página com comprovante. Total transparência.</div>
+      <div class="hero-card-ong">Relatório mensal de doações publicado nesta página com comprovante. Total transparência.</div>
     </div>
   </div>
 </section>
 
+<!-- COMO FUNCIONA -->
 <section class="como" id="como-funciona">
   <div class="como-inner">
     <div class="sec-titulo">Como funciona? É simples!</div>
@@ -258,13 +273,13 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
         <div class="como-num">1</div>
         <span class="como-icon">🔍</span>
         <div class="como-titulo">Busque um produto</div>
-        <div class="como-desc">Pesquise qualquer produto de limpeza, higiene ou saúde diretamente no SAUber.</div>
+        <div class="como-desc">Use a busca do SAUber ou clique em uma categoria para encontrar o produto que precisa.</div>
       </div>
       <div class="como-item">
         <div class="como-num">2</div>
         <span class="como-icon">🛒</span>
         <div class="como-titulo">Compre no Mercado Livre</div>
-        <div class="como-desc">Clique no botão e finalize a compra diretamente no Mercado Livre com total segurança.</div>
+        <div class="como-desc">Você é direcionado para o Mercado Livre com nosso link de afiliado. Compra com total segurança.</div>
       </div>
       <div class="como-item">
         <div class="como-num">3</div>
@@ -282,21 +297,35 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   </div>
 </section>
 
-<div class="filtros-section">
-  <div class="filtros-inner">
-    <button class="filtro-btn ativo" onclick="buscarCategoria('limpeza higiene saude',this)">✅ Todos</button>
-    <button class="filtro-btn" onclick="buscarCategoria('limpeza casa',this)">🧹 Limpeza</button>
-    <button class="filtro-btn" onclick="buscarCategoria('higiene pessoal',this)">🧼 Higiene</button>
-    <button class="filtro-btn" onclick="buscarCategoria('saude vitaminas',this)">💊 Saúde</button>
-    <button class="filtro-btn" onclick="buscarCategoria('embalagens caixas',this)">📦 Embalagens</button>
-    <button class="filtro-btn" onclick="buscarCategoria('hospitalar medico',this)">🏥 Hospitalar</button>
+<!-- BUSCA DESTAQUE -->
+<section class="busca-section">
+  <div class="busca-inner">
+    <div class="busca-titulo">🔍 Busque qualquer produto</div>
+    <div class="busca-sub">Digite o que procura e compre diretamente no Mercado Livre com nosso link de afiliado</div>
+    <div class="busca-wrap">
+      <input type="text" id="busca2" placeholder="Ex: detergente, shampoo, vitamina C..." onkeypress="buscarEnter2(event)">
+      <button onclick="buscarML2()">Buscar no ML 🛒</button>
+    </div>
+    <div class="busca-tags">
+      <a href="https://lista.mercadolivre.com.br/detergente-multiuso_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Detergente</a>
+      <a href="https://lista.mercadolivre.com.br/sabonete-antibacteriano_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Sabonete</a>
+      <a href="https://lista.mercadolivre.com.br/papel-higienico_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Papel Higiênico</a>
+      <a href="https://lista.mercadolivre.com.br/alcool-gel-70_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Álcool Gel</a>
+      <a href="https://lista.mercadolivre.com.br/vitamina-c_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Vitamina C</a>
+      <a href="https://lista.mercadolivre.com.br/desinfetante_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Desinfetante</a>
+      <a href="https://lista.mercadolivre.com.br/luvas-descartaveis_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Luvas Descartáveis</a>
+      <a href="https://lista.mercadolivre.com.br/shampoo_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Shampoo</a>
+      <a href="https://lista.mercadolivre.com.br/mascara-descartavel_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Máscara Descartável</a>
+      <a href="https://lista.mercadolivre.com.br/esponja-limpeza_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Esponja</a>
+    </div>
   </div>
-</div>
+</section>
 
-<section class="produtos-section" id="produtos">
-  <div class="produtos-inner">
+<!-- CATEGORIAS -->
+<section class="cats-section" id="produtos">
+  <div class="cats-inner">
 
-    <div class="unicef-banner">
+    <div class="unicef-banner" style="margin-bottom:32px">
       <div class="unicef-banner-icon">💙</div>
       <div class="unicef-banner-text">
         <strong>Nosso parceiro: UNICEF Brasil</strong><br>
@@ -305,27 +334,64 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <a href="https://www.unicef.org/brazil" target="_blank" rel="noopener" class="unicef-banner-link">Saiba Mais ↗</a>
     </div>
 
-    <div class="produtos-header">
-      <div class="produtos-titulo" id="produtos-titulo">🔥 Produtos em Destaque</div>
-      <div class="produtos-count" id="produtos-count"></div>
-    </div>
+    <div class="cats-titulo">🔥 Categorias em Destaque</div>
+    <div class="cats-sub">Clique numa categoria para ver os melhores produtos no Mercado Livre</div>
+    <div class="cats-grid">
 
-    <div class="produtos-grid" id="grid">
-      <div class="loading" style="grid-column:1/-1">
-        <div class="loading-spinner"></div>
-        <p>Buscando produtos reais do Mercado Livre...</p>
-      </div>
-    </div>
+      <a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
+        <span class="cat-emoji">🧹</span>
+        <div class="cat-nome">Limpeza</div>
+        <div class="cat-desc">Detergentes, desinfetantes, água sanitária e mais</div>
+        <span class="cat-btn">Ver no ML 🛒</span>
+      </a>
 
-    <div class="tg-banner" style="margin-top:32px">
-      <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
-      <p>Promoções exclusivas de limpeza, higiene e saúde direto no seu celular — gratuito.</p>
-      <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
-    </div>
+      <a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
+        <span class="cat-emoji">🧼</span>
+        <div class="cat-nome">Higiene Pessoal</div>
+        <div class="cat-desc">Sabonetes, shampoos, desodorantes e muito mais</div>
+        <span class="cat-btn">Ver no ML 🛒</span>
+      </a>
 
+      <a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
+        <span class="cat-emoji">💊</span>
+        <div class="cat-nome">Saúde</div>
+        <div class="cat-desc">Vitaminas, suplementos, termômetros e mais</div>
+        <span class="cat-btn">Ver no ML 🛒</span>
+      </a>
+
+      <a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
+        <span class="cat-emoji">🏥</span>
+        <div class="cat-nome">Hospitalar</div>
+        <div class="cat-desc">Álcool gel, luvas, máscaras descartáveis</div>
+        <span class="cat-btn">Ver no ML 🛒</span>
+      </a>
+
+      <a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
+        <span class="cat-emoji">📦</span>
+        <div class="cat-nome">Embalagens</div>
+        <div class="cat-desc">Caixas, sacolas biodegradáveis, fitas e mais</div>
+        <span class="cat-btn">Ver no ML 🛒</span>
+      </a>
+
+      <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="cat-card" style="border-color:var(--amarelo);background:linear-gradient(135deg,#FFFDE7,#FFF9C4)">
+        <span class="cat-emoji">⭐</span>
+        <div class="cat-nome">Mais Vendidos</div>
+        <div class="cat-desc">Os produtos mais populares selecionados para você</div>
+        <span class="cat-btn" style="background:var(--amarelo)">Ver Destaques 🔥</span>
+      </a>
+
+    </div>
   </div>
 </section>
 
+<!-- TELEGRAM -->
+<div class="tg-banner">
+  <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
+  <p>Promoções exclusivas de limpeza, higiene e saúde direto no seu celular — gratuito.</p>
+  <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
+</div>
+
+<!-- IMPACTO -->
 <section class="impacto" id="impacto">
   <div class="impacto-inner">
     <h2>💙 Nossa Contribuição ao UNICEF Brasil</h2>
@@ -355,7 +421,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 </section>
 
 <div class="aviso-afiliado">
-  <strong>ℹ️ Aviso de Afiliado:</strong> SAUber é um site de curadoria com links de afiliados do Mercado Livre. Ao comprar através dos nossos links, recebemos uma comissão <strong>sem custo adicional para você</strong>. 5% dessa comissão é doado mensalmente ao <strong>UNICEF Brasil</strong>. Todas as compras são realizadas diretamente no Mercado Livre.
+  <strong>ℹ️ Aviso de Afiliado:</strong> SAUber é um site de curadoria com links de afiliados do Mercado Livre. Ao comprar através dos nossos links, recebemos uma comissão <strong>sem custo adicional para você</strong>. 5% dessa comissão é doado mensalmente ao <strong>UNICEF Brasil</strong>.
 </div>
 
 <footer>
@@ -371,11 +437,11 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div>
         <div class="footer-titulo">Categorias</div>
         <ul class="footer-links">
-          <li><a href="#" onclick="buscarCategoria('limpeza casa',null)">🧹 Limpeza</a></li>
-          <li><a href="#" onclick="buscarCategoria('higiene pessoal',null)">🧼 Higiene Pessoal</a></li>
-          <li><a href="#" onclick="buscarCategoria('saude vitaminas',null)">💊 Saúde</a></li>
-          <li><a href="#" onclick="buscarCategoria('embalagens caixas',null)">📦 Embalagens</a></li>
-          <li><a href="#" onclick="buscarCategoria('hospitalar medico',null)">🏥 Hospitalar</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank">🧹 Limpeza</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank">🧼 Higiene Pessoal</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank">💊 Saúde</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank">📦 Embalagens</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank">🏥 Hospitalar</a></li>
         </ul>
       </div>
       <div>
@@ -406,123 +472,28 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 
 <script>
 const TAG = 'af20251213135858';
-const QUERIES_PADRAO = ['detergente limpeza','sabonete higiene','alcool gel','papel higienico','shampoo cabelo','vitamina c','luvas descartaveis','desinfetante','esponja limpeza','mascara descartavel','termometro digital','agua sanitaria','escova dente','desodorante','oleo coco'];
 
-function formatarPreco(preco) {
-  return 'R$ ' + preco.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
-}
+function buscarEnter(e) { if(e.key==='Enter') buscarML(); }
+function buscarEnter2(e) { if(e.key==='Enter') buscarML2(); }
 
-function gerarEstrelas(avaliacao) {
-  const nota = Math.round(avaliacao || 4);
-  return '★'.repeat(nota) + '☆'.repeat(5 - nota);
-}
-
-function renderProdutos(items, titulo) {
-  const grid = document.getElementById('grid');
-  const count = document.getElementById('produtos-count');
-  const tituloEl = document.getElementById('produtos-titulo');
-
-  if (titulo) tituloEl.textContent = titulo;
-  count.textContent = items.length + ' produtos encontrados';
-
-  if (!items.length) {
-    grid.innerHTML = '<div class="sem-resultados" style="grid-column:1/-1"><p>Nenhum produto encontrado. Tente outra busca.</p></div>';
-    return;
-  }
-
-  grid.innerHTML = items.map(item => {
-    const preco = item.price ? formatarPreco(item.price) : '';
-    const precoOriginal = item.original_price && item.original_price > item.price ? formatarPreco(item.original_price) : '';
-    const desconto = item.original_price && item.original_price > item.price ? Math.round((1 - item.price/item.original_price)*100) : 0;
-    const img = item.thumbnail ? item.thumbnail.replace('http://','https://').replace('-I.jpg','-O.jpg') : '';
-    const link = item.permalink + (item.permalink.includes('?') ? '&' : '?') + 'matt_tool=' + TAG;
-    const nome = item.title || '';
-    const vendas = item.sold_quantity ? '(' + item.sold_quantity.toLocaleString('pt-BR') + ' vendidos)' : '';
-    const avaliacao = item.reviews ? item.reviews.rating_average : 4.5;
-
-    return `
-      <div class="produto">
-        <div class="produto-img">
-          ${img ? `<img src="${img}" alt="${nome}" loading="lazy" onerror="this.style.display='none'">` : ''}
-          ${desconto > 0 ? `<span class="produto-preco-badge">${desconto}% OFF</span>` : ''}
-        </div>
-        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
-        <div class="produto-body">
-          <div class="produto-nome">${nome}</div>
-          ${preco ? `<div class="produto-preco">${preco}</div>` : ''}
-          ${precoOriginal ? `<div class="produto-preco-original">${precoOriginal}</div>` : ''}
-          <div class="produto-avaliacao">
-            <span class="estrelas">${gerarEstrelas(avaliacao)}</span>
-            <span class="avaliacao-num">${vendas}</span>
-          </div>
-          <div class="produto-btns">
-            <a href="${link}" target="_blank" class="btn-ml">🛒 Comprar no Mercado Livre</a>
-          </div>
-        </div>
-      </div>`;
-  }).join('');
-}
-
-function mostrarLoading() {
-  document.getElementById('grid').innerHTML = `
-    <div class="loading" style="grid-column:1/-1">
-      <div class="loading-spinner"></div>
-      <p>Buscando produtos reais do Mercado Livre...</p>
-    </div>`;
-}
-
-async function buscarML(query, limite) {
-  limite = limite || 32;
-  const url = `https://api.mercadolibre.com/sites/MLB/search?q=${encodeURIComponent(query)}&limit=${limite}&condition=new`;
-  const resp = await fetch(url);
-  if (!resp.ok) throw new Error('Erro na API');
-  const data = await resp.json();
-  return data.results || [];
-}
-
-async function buscarProdutos() {
+function buscarML() {
   const q = document.getElementById('busca').value.trim();
-  if (!q) return;
-  mostrarLoading();
-  document.getElementById('produtos').scrollIntoView({behavior:'smooth'});
-  try {
-    const items = await buscarML(q, 32);
-    renderProdutos(items, '🔍 Resultados para "' + q + '"');
-    document.querySelectorAll('.filtro-btn, .nav-cat').forEach(b => b.classList.remove('ativo'));
-  } catch(e) {
-    document.getElementById('grid').innerHTML = '<div class="erro" style="grid-column:1/-1">Erro ao buscar produtos. Tente novamente.</div>';
-  }
+  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`, '_blank');
 }
 
-async function buscarCategoria(query, btn) {
-  mostrarLoading();
-  if (btn) {
-    document.querySelectorAll('.filtro-btn, .nav-cat').forEach(b => b.classList.remove('ativo'));
-    btn.classList.add('ativo');
-  }
-  try {
-    const items = await buscarML(query, 32);
-    renderProdutos(items, '🔥 Produtos em Destaque');
-  } catch(e) {
-    document.getElementById('grid').innerHTML = '<div class="erro" style="grid-column:1/-1">Erro ao buscar produtos. Tente novamente.</div>';
-  }
-}
-
-function buscarEnter(e) {
-  if (e.key === 'Enter') buscarProdutos();
+function buscarML2() {
+  const q = document.getElementById('busca2').value.trim();
+  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`, '_blank');
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href');
-    if (id === '#') return;
+    if(id === '#') return;
     e.preventDefault();
     document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
   });
 });
-
-// Carrega produtos iniciais
-buscarCategoria('limpeza higiene saude', null);
 </script>
 </body>
 </html>
