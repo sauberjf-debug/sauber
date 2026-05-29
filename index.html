@@ -12,23 +12,12 @@ gtag('config', 'G-TTEB7R3XQR');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAUber — Compre, Doe e Transforme Vidas</title>
-<meta name="description" content="5% da nossa comissão mensal é doado ao UNICEF Brasil. Produtos de limpeza, higiene e saúde com propósito. Sem custo adicional para você.">
-<meta name="keywords" content="produtos limpeza doação, unicef brasil, saúde infantil, produtos higiene, SAUber">
+<meta name="description" content="5% da nossa comissão mensal é doado ao UNICEF Brasil. Produtos para sua casa com propósito. Sem custo adicional para você.">
+<meta name="keywords" content="produtos casa doação, unicef brasil, limpeza, organização, SAUber">
 <meta property="og:title" content="SAUber — Compre e Contribua com o UNICEF Brasil">
 <meta property="og:description" content="5% da nossa comissão mensal vai para o UNICEF Brasil. Sem custo adicional.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saubershop.com.br">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Store",
-  "name": "SAUber",
-  "url": "https://saubershop.com.br",
-  "description": "5% da nossa comissão mensal doado ao UNICEF Brasil.",
-  "slogan": "Compre. Doe. Transforme Vidas.",
-  "sameAs": "https://www.unicef.org/brazil"
-}
-</script>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -41,8 +30,6 @@ gtag('config', 'G-TTEB7R3XQR');
   --ml:#FFE600;--ml2:#F0D800;
 }
 body{font-family:'Nunito',sans-serif;background:var(--cinza);color:var(--texto);font-size:15px;line-height:1.6}
-
-/* NAV */
 .nav-doacao{background:var(--verde);color:white;text-align:center;padding:8px 20px;font-size:0.82rem;font-weight:700}
 .nav-doacao span{background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:100px;margin:0 6px}
 nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-index:200}
@@ -57,12 +44,6 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .nav-link{text-decoration:none;color:var(--texto2);font-size:0.82rem;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:2px;transition:color 0.2s}
 .nav-link:hover{color:var(--verde)}
 .nav-link-icon{font-size:1.3rem}
-.nav-cats{background:var(--texto);padding:0}
-.nav-cats-inner{max-width:1280px;margin:0 auto;display:flex;overflow-x:auto}
-.nav-cat{color:rgba(255,255,255,0.85);text-decoration:none;padding:9px 20px;font-size:0.8rem;font-weight:700;white-space:nowrap;transition:all 0.2s;display:flex;align-items:center;gap:6px}
-.nav-cat:hover{background:var(--verde);color:white}
-
-/* HERO */
 .hero{background:linear-gradient(135deg,#0A3D2E 0%,#1A6B4A 50%,#0A3D2E 100%);padding:60px 24px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,184,0,0.15) 0%,transparent 70%)}
 .hero-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
@@ -72,23 +53,19 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .hero-sub{color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:28px;line-height:1.7}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn-hero-ml{background:var(--ml);color:#333;padding:16px 36px;border-radius:8px;font-weight:900;font-size:1rem;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:10px}
-.btn-hero-ml:hover{background:var(--ml2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,230,0,0.4)}
+.btn-hero-ml:hover{background:var(--ml2);transform:translateY(-2px)}
 .btn-hero-sec{background:transparent;color:white;padding:16px 32px;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;border:2px solid rgba(255,255,255,0.4);transition:all 0.2s;display:inline-block}
 .btn-hero-sec:hover{border-color:white;background:rgba(255,255,255,0.1)}
 .hero-stats{display:flex;gap:32px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.1)}
 .hero-stat-num{font-size:1.8rem;font-weight:900;color:var(--amarelo)}
 .hero-stat-label{font-size:0.72rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-
-/* HERO CARD */
 .hero-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:32px;text-align:center}
-.hero-card-emoji{font-size:3.5rem;display:block;margin-bottom:16px}
+.hero-card-emoji{font-size:4rem;display:block;margin-bottom:16px}
 .hero-card-titulo{font-size:1.1rem;font-weight:800;color:white;margin-bottom:8px}
-.hero-card-sub{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:24px}
+.hero-card-sub{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:20px}
 .hero-card-pct{font-size:4rem;font-weight:900;color:var(--amarelo);line-height:1}
-.hero-card-pct-label{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px;margin-bottom:20px}
+.hero-card-pct-label{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px;margin-bottom:16px}
 .hero-card-ong{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:12px;line-height:1.6}
-
-/* COMO FUNCIONA */
 .como{background:white;padding:60px 24px}
 .como-inner{max-width:1280px;margin:0 auto}
 .sec-titulo{font-size:1.6rem;font-weight:900;color:var(--texto);margin-bottom:8px}
@@ -99,43 +76,40 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .como-icon{font-size:2.5rem;margin-bottom:12px;display:block}
 .como-titulo{font-size:0.95rem;font-weight:800;color:var(--texto);margin-bottom:6px}
 .como-desc{font-size:0.82rem;color:var(--texto2);line-height:1.6}
-
-/* CATEGORIAS */
-.cats-section{padding:48px 24px;background:var(--cinza)}
-.cats-inner{max-width:1280px;margin:0 auto}
-.cats-titulo{font-size:1.3rem;font-weight:900;color:var(--texto);margin-bottom:8px}
-.cats-sub{font-size:0.9rem;color:var(--texto2);margin-bottom:32px}
-.cats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.cat-card{background:white;border:1.5px solid var(--borda);border-radius:16px;padding:28px 20px;text-align:center;text-decoration:none;transition:all 0.25s;display:block}
-.cat-card:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-4px)}
-.cat-emoji{font-size:3rem;display:block;margin-bottom:12px}
-.cat-nome{font-size:1rem;font-weight:800;color:var(--texto);margin-bottom:6px}
-.cat-desc{font-size:0.78rem;color:var(--texto2);margin-bottom:16px;line-height:1.5}
-.cat-btn{background:var(--ml);color:#333;padding:8px 20px;border-radius:8px;font-size:0.82rem;font-weight:800;display:inline-block;transition:all 0.2s}
-.cat-card:hover .cat-btn{background:var(--ml2)}
-
-/* UNICEF BANNER */
-.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:20px 28px;display:flex;align-items:center;gap:16px;max-width:1280px;margin:0 auto 0}
+.produtos-section{padding:40px 24px}
+.produtos-inner{max-width:1280px;margin:0 auto}
+.produtos-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.produtos-titulo{font-size:1.1rem;font-weight:800;color:var(--texto)}
+.produtos-count{font-size:0.8rem;color:var(--texto2)}
+.unicef-banner{background:#E6F7FF;border:2px solid var(--unicef);border-radius:12px;padding:16px 24px;display:flex;align-items:center;gap:16px;margin-bottom:28px}
 .unicef-banner-icon{font-size:2.2rem;flex-shrink:0}
 .unicef-banner-text{font-size:0.85rem;color:#003A52;line-height:1.5}
 .unicef-banner-text strong{color:var(--unicef2);font-weight:800}
 .unicef-banner-link{margin-left:auto;background:var(--unicef);color:white;text-decoration:none;padding:8px 18px;border-radius:8px;font-size:0.8rem;font-weight:800;white-space:nowrap;flex-shrink:0}
 .unicef-banner-link:hover{background:var(--unicef2)}
-
-/* BUSCA DESTAQUE */
-.busca-section{background:white;padding:48px 24px}
-.busca-inner{max-width:800px;margin:0 auto;text-align:center}
-.busca-titulo{font-size:1.4rem;font-weight:900;color:var(--texto);margin-bottom:8px}
-.busca-sub{font-size:0.9rem;color:var(--texto2);margin-bottom:28px}
-.busca-wrap{display:flex;border-radius:12px;overflow:hidden;border:2px solid var(--verde);background:white;box-shadow:var(--sombra)}
-.busca-wrap input{flex:1;padding:14px 20px;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:1rem}
-.busca-wrap button{background:var(--verde);color:white;border:none;padding:14px 28px;cursor:pointer;font-size:0.95rem;font-weight:800;font-family:'Nunito',sans-serif;transition:background 0.2s}
-.busca-wrap button:hover{background:var(--verde2)}
-.busca-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
-.busca-tag{background:var(--cinza);border:1px solid var(--borda);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:700;cursor:pointer;color:var(--texto);transition:all 0.2s;text-decoration:none}
+.produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.produto{background:white;border:1.5px solid var(--borda);border-radius:12px;overflow:hidden;transition:all 0.25s;display:flex;flex-direction:column}
+.produto:hover{box-shadow:var(--sombra2);border-color:var(--verde);transform:translateY(-3px)}
+.produto-img{height:200px;overflow:hidden;border-bottom:1px solid var(--borda);position:relative;background:var(--cinza);display:flex;align-items:center;justify-content:center}
+.produto-img img{width:100%;height:100%;object-fit:contain;padding:12px;transition:transform 0.3s}
+.produto:hover .produto-img img{transform:scale(1.05)}
+.produto-badge{position:absolute;top:8px;left:8px;background:#E53935;color:white;padding:4px 10px;border-radius:6px;font-size:0.68rem;font-weight:800}
+.produto-doacao-strip{background:var(--verde-claro);padding:5px 12px;font-size:0.68rem;font-weight:800;color:var(--verde2);border-bottom:1px solid #C8EDD8}
+.produto-body{padding:14px;display:flex;flex-direction:column;flex:1}
+.produto-nome{font-size:0.85rem;font-weight:700;color:var(--texto);line-height:1.4;margin-bottom:10px;flex:1}
+.produto-btns{margin-top:auto}
+.btn-ml{display:block;text-align:center;padding:10px;border-radius:7px;font-size:0.82rem;font-weight:800;text-decoration:none;background:var(--ml);color:#333;transition:all 0.2s}
+.btn-ml:hover{background:var(--ml2);transform:scale(1.02)}
+.busca-section{background:white;padding:40px 24px;border-top:1px solid var(--borda)}
+.busca-inner{max-width:700px;margin:0 auto;text-align:center}
+.busca-titulo{font-size:1.3rem;font-weight:900;color:var(--texto);margin-bottom:8px}
+.busca-sub{font-size:0.9rem;color:var(--texto2);margin-bottom:24px}
+.busca-wrap{display:flex;border-radius:10px;overflow:hidden;border:2px solid var(--verde);background:white;box-shadow:var(--sombra)}
+.busca-wrap input{flex:1;padding:13px 18px;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:0.95rem}
+.busca-wrap button{background:var(--verde);color:white;border:none;padding:13px 24px;cursor:pointer;font-size:0.9rem;font-weight:800;font-family:'Nunito',sans-serif}
+.busca-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.busca-tag{background:var(--cinza);border:1px solid var(--borda);border-radius:100px;padding:5px 14px;font-size:0.78rem;font-weight:700;cursor:pointer;color:var(--texto);transition:all 0.2s;text-decoration:none}
 .busca-tag:hover{background:var(--verde);border-color:var(--verde);color:white}
-
-/* IMPACTO */
 .impacto{background:var(--verde);padding:60px 24px}
 .impacto-inner{max-width:1280px;margin:0 auto;text-align:center}
 .impacto h2{font-size:2rem;font-weight:900;color:white;margin-bottom:8px}
@@ -148,12 +122,8 @@ nav{background:white;padding:0;box-shadow:var(--sombra);position:sticky;top:0;z-
 .impacto-ong-icon{font-size:2rem}
 .impacto-ong-nome{font-size:0.9rem;font-weight:800;color:white}
 .impacto-ong-desc{font-size:0.78rem;color:rgba(255,255,255,0.7);text-align:left}
-
-/* AVISO */
 .aviso-afiliado{background:white;border-top:1px solid var(--borda);padding:16px 24px;text-align:center;font-size:0.75rem;color:var(--texto2)}
 .aviso-afiliado strong{color:var(--verde)}
-
-/* FOOTER */
 footer{background:var(--texto);color:white;padding:48px 24px 24px}
 .footer-inner{max-width:1280px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:32px}
@@ -168,11 +138,10 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 .us-link{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 20px;text-align:center;margin:24px 0}
 .us-link a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.8rem}
 .us-link a:hover{color:var(--verde)}
-.tg-banner{background:linear-gradient(135deg,#0088CC,#005F8E);padding:24px;text-align:center;margin:48px 0 0;border-radius:0}
+.tg-banner{background:linear-gradient(135deg,#0088CC,#005F8E);padding:24px;text-align:center;margin:32px 0 0}
 .tg-banner h3{font-size:1.1rem;font-weight:800;color:white;margin-bottom:6px}
 .tg-banner p{font-size:0.82rem;color:rgba(255,255,255,0.8);margin-bottom:16px}
 .btn-tg{display:inline-block;background:white;color:#0088CC;padding:10px 28px;border-radius:8px;font-weight:800;font-size:0.88rem;text-decoration:none}
-
 @media(max-width:768px){
   .nav-inner{padding:10px 16px;gap:10px}
   .nav-actions{display:none}
@@ -181,10 +150,9 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   .como-grid{grid-template-columns:1fr 1fr}
   .impacto-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
-  .cats-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .produtos-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
   .unicef-banner{flex-wrap:wrap}
   .unicef-banner-link{margin-left:0;width:100%;text-align:center}
-  .hero-btns{flex-direction:column}
 }
 </style>
 </head>
@@ -198,7 +166,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   <div class="nav-inner">
     <a href="#" class="logo">SAU<span>ber</span></a>
     <div class="search-wrap">
-      <input type="text" id="busca" placeholder="Buscar produtos de limpeza, higiene, saúde..." onkeypress="buscarEnter(event)">
+      <input type="text" id="busca" placeholder="Buscar produtos no Mercado Livre..." onkeypress="buscarEnter(event)">
       <button onclick="buscarML()">🔍</button>
     </div>
     <div class="nav-actions">
@@ -213,19 +181,8 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       </a>
     </div>
   </div>
-  <div class="nav-cats">
-    <div class="nav-cats-inner">
-      <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="nav-cat">🏠 Todos os Produtos</a>
-      <a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🧹 Limpeza</a>
-      <a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🧼 Higiene</a>
-      <a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">💊 Saúde</a>
-      <a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">📦 Embalagens</a>
-      <a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="nav-cat">🏥 Hospitalar</a>
-    </div>
-  </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <div>
@@ -233,7 +190,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <h1>Compre.<br>Doe.<br><span>Transforme Vidas.</span></h1>
       <p class="hero-sub">Cada produto comprado pelo SAUber contribui com o <strong style="color:var(--amarelo)">UNICEF Brasil</strong> — protegendo crianças em situação de vulnerabilidade. <strong style="color:white">Sem custo adicional para você.</strong></p>
       <div class="hero-btns">
-        <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="btn-hero-ml">🛒 Ver Produtos no Mercado Livre</a>
+        <a href="#produtos" class="btn-hero-ml">🛒 Ver Produtos</a>
         <a href="#como-funciona" class="btn-hero-sec">Como funciona?</a>
       </div>
       <div class="hero-stats">
@@ -258,12 +215,11 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div class="hero-card-pct">5%</div>
       <div class="hero-card-pct-label">da comissão de afiliado</div>
       <div style="font-size:0.78rem;color:rgba(255,255,255,0.7)">ao <strong style="color:var(--amarelo)">UNICEF Brasil</strong> — protegendo crianças</div>
-      <div class="hero-card-ong">Relatório mensal de doações publicado nesta página com comprovante. Total transparência.</div>
+      <div class="hero-card-ong">Relatório mensal de doações publicado nesta página com comprovante.</div>
     </div>
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
 <section class="como" id="como-funciona">
   <div class="como-inner">
     <div class="sec-titulo">Como funciona? É simples!</div>
@@ -272,20 +228,20 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <div class="como-item">
         <div class="como-num">1</div>
         <span class="como-icon">🔍</span>
-        <div class="como-titulo">Busque um produto</div>
-        <div class="como-desc">Use a busca do SAUber ou clique em uma categoria para encontrar o produto que precisa.</div>
+        <div class="como-titulo">Escolha um produto</div>
+        <div class="como-desc">Navegue pelo SAUber e encontre o produto que precisa.</div>
       </div>
       <div class="como-item">
         <div class="como-num">2</div>
         <span class="como-icon">🛒</span>
         <div class="como-titulo">Compre no Mercado Livre</div>
-        <div class="como-desc">Você é direcionado para o Mercado Livre com nosso link de afiliado. Compra com total segurança.</div>
+        <div class="como-desc">Clique no botão e finalize a compra no ML com total segurança.</div>
       </div>
       <div class="como-item">
         <div class="como-num">3</div>
         <span class="como-icon">💰</span>
         <div class="como-titulo">SAUber recebe comissão</div>
-        <div class="como-desc">Por ser afiliado oficial do ML, recebemos uma pequena comissão. Sem custo adicional para você.</div>
+        <div class="como-desc">Por ser afiliado oficial, recebemos uma pequena comissão. Sem custo para você.</div>
       </div>
       <div class="como-item">
         <div class="como-num">4</div>
@@ -297,105 +253,208 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
   </div>
 </section>
 
-<!-- BUSCA DESTAQUE -->
-<section class="busca-section">
-  <div class="busca-inner">
-    <div class="busca-titulo">🔍 Busque qualquer produto</div>
-    <div class="busca-sub">Digite o que procura e compre diretamente no Mercado Livre com nosso link de afiliado</div>
-    <div class="busca-wrap">
-      <input type="text" id="busca2" placeholder="Ex: detergente, shampoo, vitamina C..." onkeypress="buscarEnter2(event)">
-      <button onclick="buscarML2()">Buscar no ML 🛒</button>
-    </div>
-    <div class="busca-tags">
-      <a href="https://lista.mercadolivre.com.br/detergente-multiuso_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Detergente</a>
-      <a href="https://lista.mercadolivre.com.br/sabonete-antibacteriano_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Sabonete</a>
-      <a href="https://lista.mercadolivre.com.br/papel-higienico_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Papel Higiênico</a>
-      <a href="https://lista.mercadolivre.com.br/alcool-gel-70_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Álcool Gel</a>
-      <a href="https://lista.mercadolivre.com.br/vitamina-c_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Vitamina C</a>
-      <a href="https://lista.mercadolivre.com.br/desinfetante_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Desinfetante</a>
-      <a href="https://lista.mercadolivre.com.br/luvas-descartaveis_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Luvas Descartáveis</a>
-      <a href="https://lista.mercadolivre.com.br/shampoo_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Shampoo</a>
-      <a href="https://lista.mercadolivre.com.br/mascara-descartavel_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Máscara Descartável</a>
-      <a href="https://lista.mercadolivre.com.br/esponja-limpeza_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">Esponja</a>
-    </div>
-  </div>
-</section>
+<section class="produtos-section" id="produtos">
+  <div class="produtos-inner">
 
-<!-- CATEGORIAS -->
-<section class="cats-section" id="produtos">
-  <div class="cats-inner">
-
-    <div class="unicef-banner" style="margin-bottom:32px">
+    <div class="unicef-banner">
       <div class="unicef-banner-icon">💙</div>
       <div class="unicef-banner-text">
         <strong>Nosso parceiro: UNICEF Brasil</strong><br>
-        Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil — organização que protege crianças e adolescentes em situação de vulnerabilidade em todo o país.
+        Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil — organização que protege crianças e adolescentes vulneráveis em todo o país.
       </div>
       <a href="https://www.unicef.org/brazil" target="_blank" rel="noopener" class="unicef-banner-link">Saiba Mais ↗</a>
     </div>
 
-    <div class="cats-titulo">🔥 Categorias em Destaque</div>
-    <div class="cats-sub">Clique numa categoria para ver os melhores produtos no Mercado Livre</div>
-    <div class="cats-grid">
+    <div class="produtos-header">
+      <div class="produtos-titulo">🔥 Produtos em Destaque</div>
+      <div class="produtos-count">13 produtos</div>
+    </div>
 
-      <a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
-        <span class="cat-emoji">🧹</span>
-        <div class="cat-nome">Limpeza</div>
-        <div class="cat-desc">Detergentes, desinfetantes, água sanitária e mais</div>
-        <span class="cat-btn">Ver no ML 🛒</span>
-      </a>
+    <div class="produtos-grid">
 
-      <a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
-        <span class="cat-emoji">🧼</span>
-        <div class="cat-nome">Higiene Pessoal</div>
-        <div class="cat-desc">Sabonetes, shampoos, desodorantes e muito mais</div>
-        <span class="cat-btn">Ver no ML 🛒</span>
-      </a>
+      <div class="produto">
+        <div class="produto-img">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_894055-MLB73459506028_122023-O.jpg" alt="Esfregão MOP 360" loading="lazy" onerror="this.src='';this.parentNode.innerHTML='🧹'">
+          <span class="produto-badge">🔥 Mais Vendido</span>
+        </div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Esfregão Perfect Pro MOP 360 Balde Inox Cabo Longo Microfibra 16L</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/esfrego-perfect-pro-mop-360-balde-inox-cabo-longo-microfibra-16l/p/MLB19969083?pdp_filters=item_id%3AMLB3297970619&extra_comm=true#polycard_client=affiliates&wid=MLB3297970619&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
 
-      <a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
-        <span class="cat-emoji">💊</span>
-        <div class="cat-nome">Saúde</div>
-        <div class="cat-desc">Vitaminas, suplementos, termômetros e mais</div>
-        <span class="cat-btn">Ver no ML 🛒</span>
-      </a>
+      <div class="produto">
+        <div class="produto-img">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_617397-MLB74221856499_012024-O.jpg" alt="Bomba Bebedouro" loading="lazy" onerror="this.style.display='none'">
+          <span class="produto-badge">💰 Oferta</span>
+        </div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Bomba Elétrica para Bebedouro de Garrafões Kamufla Branco</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/bomba-eletrica-filtro-bebedouro-de-garrafoes-galo-d-agua-marca-kamufla-branco-cor-branco/p/MLB27040280?pdp_filters=deal%3AMLB1578289-1&extra_comm=false#polycard_client=affiliates&wid=MLB4231724937&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
 
-      <a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
-        <span class="cat-emoji">🏥</span>
-        <div class="cat-nome">Hospitalar</div>
-        <div class="cat-desc">Álcool gel, luvas, máscaras descartáveis</div>
-        <span class="cat-btn">Ver no ML 🛒</span>
-      </a>
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#FFF3E0">⚙️</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Adaptador Motosserra Golfield para Esmerilhadeira com Corrente 82cm</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/adaptador-motosserra-golfield-para-esmerilhadeira-com-corrente-82cm/p/MLB62807187?pdp_filters=item_id%3AMLB6002742144&extra_comm=true#polycard_client=affiliates&wid=MLB6002742144&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
 
-      <a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="cat-card">
-        <span class="cat-emoji">📦</span>
-        <div class="cat-nome">Embalagens</div>
-        <div class="cat-desc">Caixas, sacolas biodegradáveis, fitas e mais</div>
-        <span class="cat-btn">Ver no ML 🛒</span>
-      </a>
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#E8F5E9">🧺</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit 5 Sacos para Máquina de Lavagem de Roupas Delicadas e Íntimas</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-5-sacos-para-maquina-lavagem-de-roupas-delicadas-intimas/up/MLBU3453370601?pdp_filters=item_id%3AMLB5759853602&extra_comm=true#polycard_client=affiliates&wid=MLB5759853602&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
 
-      <a href="https://www.mercadolivre.com.br/social/af20251213135858" target="_blank" class="cat-card" style="border-color:var(--amarelo);background:linear-gradient(135deg,#FFFDE7,#FFF9C4)">
-        <span class="cat-emoji">⭐</span>
-        <div class="cat-nome">Mais Vendidos</div>
-        <div class="cat-desc">Os produtos mais populares selecionados para você</div>
-        <span class="cat-btn" style="background:var(--amarelo)">Ver Destaques 🔥</span>
-      </a>
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#E3F2FD">🪟</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit 4 Telas Mosquiteira Janela Anti-Inseto com Velcro Ajustável 130x150</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-4-telas-mosquiteira-janela-anti-inseto-para-mosquito-proteco-janela-porta-com-velcro-ajustavel-130x150-floresta-urbana/p/MLB44608917?pdp_filters=item_id%3AMLB5212864574&extra_comm=true#polycard_client=affiliates&wid=MLB5212864574&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#F3E5F5">🍱</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit 10 Potes Herméticos Vidro 640ml Marmita Forno Microondas</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-10-potes-hermeticos-vidro-640ml-marmita-forno-microonda/up/MLBU3873929629?pdp_filters=deal%3AMLB1578289-1&extra_comm=false#polycard_client=affiliates&wid=MLB4580347331&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#F3E5F5">🥡</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit 12 Potes Herméticos Empilháveis Porta Mantimento Cozinha Rebirth</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-12-pote-hermeticos-empilhaveis-porta-mantimento-cozinha-rebirth/p/MLB67493801?pdp_filters=item_id%3AMLB6568689176&extra_comm=true#polycard_client=affiliates&wid=MLB6568689176&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#FBE9E7">🛋️</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Sofá 3 Lugares Beny Base de Madeira Linho Cotton Bege</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/sofa-3-lugares-beny-base-de-madeira-linho-cotton-bege/up/MLBU3912976175?pdp_filters=item_id%3AMLB4629141609&extra_comm=true#polycard_client=affiliates&wid=MLB4629141609&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#FCE4EC">💄</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Organizador de Maquiagem Cosméticos Mesa Porta Treco Multiuso</div>
+          <div class="produto-btns">
+            <a href="https://produto.mercadolivre.com.br/MLB-3478710288-organizador-maquiagem-cosmeticos-mesa-porta-treco-multiuso-_JM?searchVariation=177734905613&pdp_filters=item_id%3AMLB3478710288&extra_comm=true#polycard_client=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#E1F5FE">🏊</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Cascata para Piscina Inox 75 x 25cm Envio Imediato</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/cascata-para-piscina-de-inox-75-x-25-cm-envio-imediato/up/MLBU3878007778?pdp_filters=item_id%3AMLB6538976422&extra_comm=true#polycard_client=affiliates&wid=MLB6538976422&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#E8F5E9">🧪</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit Teste Medidor pH, Cloro e Alcalinidade para Piscinas</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-teste-medidor-ph-e-cloro-e-alcalinidadeaguapiscinas/p/MLB2049727620?pdp_filters=item_id%3AMLB2797764228&extra_comm=true#polycard_client=affiliates&wid=MLB2797764228&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#E8F5E9">🚿</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Desentupidor Diabo Verde 300g</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/desentupidor-diabo-verde-300g/p/MLB40971004?pdp_filters=item_id%3AMLB5501165622&extra_comm=true#polycard_client=affiliates&wid=MLB5501165622&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto">
+        <div class="produto-img" style="font-size:4rem;background:#F9FBE7">🫙</div>
+        <div class="produto-doacao-strip">💙 Contribui com o UNICEF Brasil</div>
+        <div class="produto-body">
+          <div class="produto-nome">Kit 6 Potes Tampa Bambu 300ml Herméticos Vidro Borossilicato Porta Temperos</div>
+          <div class="produto-btns">
+            <a href="https://www.mercadolivre.com.br/kit-6-pote-tampa-de-bambu-300ml-hermetico-vidro-borossilicato-porta-temperos-mantimentos-alimentos-redondo-cor-transparente-bravli/p/MLB57776464?pdp_filters=item_id%3AMLB5740274158&extra_comm=true#polycard_client=affiliates&wid=MLB5740274158&sid=affiliates" target="_blank" class="btn-ml">🛒 Comprar no ML</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tg-banner">
+      <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
+      <p>Promoções exclusivas direto no seu celular — gratuito.</p>
+      <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="busca-section">
+  <div class="busca-inner">
+    <div class="busca-titulo">🔍 Busque qualquer produto</div>
+    <div class="busca-sub">Pesquise e compre no Mercado Livre com nosso link de afiliado</div>
+    <div class="busca-wrap">
+      <input type="text" id="busca2" placeholder="Ex: detergente, organizador, potes..." onkeypress="buscarEnter2(event)">
+      <button onclick="buscarML2()">Buscar 🛒</button>
+    </div>
+    <div class="busca-tags">
+      <a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">🧹 Limpeza</a>
+      <a href="https://lista.mercadolivre.com.br/organizadores-cozinha_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">📦 Organização</a>
+      <a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">🧼 Higiene</a>
+      <a href="https://lista.mercadolivre.com.br/piscinas-acessorios_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">🏊 Piscina</a>
+      <a href="https://lista.mercadolivre.com.br/moveis-decoracao_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">🛋️ Móveis</a>
+      <a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank" class="busca-tag">💊 Saúde</a>
     </div>
   </div>
 </section>
 
-<!-- TELEGRAM -->
-<div class="tg-banner">
-  <h3>✈️ Receba ofertas todo dia no Telegram!</h3>
-  <p>Promoções exclusivas de limpeza, higiene e saúde direto no seu celular — gratuito.</p>
-  <a href="https://t.me/techdeals_br" target="_blank" class="btn-tg">📲 Entrar no Canal Grátis</a>
-</div>
-
-<!-- IMPACTO -->
 <section class="impacto" id="impacto">
   <div class="impacto-inner">
     <h2>💙 Nossa Contribuição ao UNICEF Brasil</h2>
-    <div class="impacto-sub">Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil, com comprovante publicado aqui.</div>
+    <div class="impacto-sub">Todo mês o SAUber doa 5% da nossa comissão de afiliado ao UNICEF Brasil.</div>
     <div class="impacto-grid">
       <div class="impacto-card">
         <div class="impacto-num">R$0</div>
@@ -414,7 +473,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
       <span class="impacto-ong-icon">💙</span>
       <div>
         <div class="impacto-ong-nome">UNICEF Brasil — Nosso Parceiro</div>
-        <div class="impacto-ong-desc">Doações realizadas mensalmente via unicef.org.br/doe com comprovante publicado nesta página.</div>
+        <div class="impacto-ong-desc">Doações via unicef.org.br/doe com comprovante publicado mensalmente nesta página.</div>
       </div>
     </div>
   </div>
@@ -429,7 +488,7 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
     <div class="footer-grid">
       <div>
         <div class="footer-logo">SAU<span>ber</span></div>
-        <p class="footer-desc">Curadoria de produtos de limpeza, higiene e saúde. Todo mês doamos 5% da nossa comissão ao <strong style="color:var(--verde)">UNICEF Brasil</strong>. Sem custo adicional para você.</p>
+        <p class="footer-desc">Curadoria de produtos selecionados. Todo mês doamos 5% da nossa comissão ao <strong style="color:var(--verde)">UNICEF Brasil</strong>. Sem custo adicional para você.</p>
         <div class="us-link" style="margin-top:16px">
           <a href="https://saubershop.shop">🇺🇸 Also available in English — saubershop.shop</a>
         </div>
@@ -438,10 +497,10 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
         <div class="footer-titulo">Categorias</div>
         <ul class="footer-links">
           <li><a href="https://lista.mercadolivre.com.br/limpeza-domestica_NoIndex_True#matt_tool=af20251213135858" target="_blank">🧹 Limpeza</a></li>
-          <li><a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank">🧼 Higiene Pessoal</a></li>
-          <li><a href="https://lista.mercadolivre.com.br/vitaminas-suplementos_NoIndex_True#matt_tool=af20251213135858" target="_blank">💊 Saúde</a></li>
-          <li><a href="https://lista.mercadolivre.com.br/embalagens_NoIndex_True#matt_tool=af20251213135858" target="_blank">📦 Embalagens</a></li>
-          <li><a href="https://lista.mercadolivre.com.br/hospitalar_NoIndex_True#matt_tool=af20251213135858" target="_blank">🏥 Hospitalar</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/organizadores-cozinha_NoIndex_True#matt_tool=af20251213135858" target="_blank">📦 Organização</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/higiene-pessoal_NoIndex_True#matt_tool=af20251213135858" target="_blank">🧼 Higiene</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/piscinas-acessorios_NoIndex_True#matt_tool=af20251213135858" target="_blank">🏊 Piscina</a></li>
+          <li><a href="https://lista.mercadolivre.com.br/moveis-decoracao_NoIndex_True#matt_tool=af20251213135858" target="_blank">🛋️ Móveis</a></li>
         </ul>
       </div>
       <div>
@@ -472,24 +531,20 @@ footer{background:var(--texto);color:white;padding:48px 24px 24px}
 
 <script>
 const TAG = 'af20251213135858';
-
-function buscarEnter(e) { if(e.key==='Enter') buscarML(); }
-function buscarEnter2(e) { if(e.key==='Enter') buscarML2(); }
-
-function buscarML() {
+function buscarEnter(e){ if(e.key==='Enter') buscarML(); }
+function buscarEnter2(e){ if(e.key==='Enter') buscarML2(); }
+function buscarML(){
   const q = document.getElementById('busca').value.trim();
-  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`, '_blank');
+  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`,'_blank');
 }
-
-function buscarML2() {
+function buscarML2(){
   const q = document.getElementById('busca2').value.trim();
-  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`, '_blank');
+  if(q) window.open(`https://lista.mercadolivre.com.br/${encodeURIComponent(q)}_NoIndex_True#matt_tool=${TAG}`,'_blank');
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const id = a.getAttribute('href');
-    if(id === '#') return;
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const id=a.getAttribute('href');
+    if(id==='#') return;
     e.preventDefault();
     document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
   });
